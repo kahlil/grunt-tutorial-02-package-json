@@ -5,7 +5,7 @@
 
 ## Script
 
-Hi welcome to Grunt Basics. My name is Kahlil and I will guide you through creating a package.json file.
+Hi welcome to Grunt Basics. My name is Kahlil and I will guide you through creating a package.json file for your Grunt project.
 
 What is a package.json?
 

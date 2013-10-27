@@ -1,3 +1,3 @@
-# grunt-tutorials
+# Grunt Basics: package.json
 
-reveal.js slides I use for Grunt screencasts and tutorials.
+This repository contains the source files for the presentation and the script used in the screencast.
