@@ -44,13 +44,27 @@ Next on the site, it goes on to list the ways how you can create a package.json 
 
 * and the third option is just to copy and paste a little snippet of code that can be used as a starting point
 
+-- slide 5
 
+Now I am going to show you how to create your package.json on the command line with npm init.
 
+-- Open your terminal of choice.
+-- Type in npm init and hit return.
+-- As you can see npm gives you a nice explanation of what is going to happen
+-- First it wants to know the package name. It has to be a url-friendly name in order to be valid.
+-- Next npm wants to know the version number. Usually you would choose something like 0.1.0 or 0.0.1 to start with.
+-- You don't need a description for your Grunt project so we skip that.
+-- Same goes for the entry point and the test command.
+-- On the next one we can insert the link to the Git repo of the project if we have one.
+-- If you the project is a gruntplugin or a bower component or an npm module you should enter relevant keywords for the keywords property.
+-- Now fill in your name and which license your are using and we're done!
 
+npm shows you a nice little summary that we confirm with yes.
 
+Then open up the package.json file in your favorite editor.
+As you can see there is a bunch of stuff in there we don't need. Throw out "main", "scripts" and "description" and add the "devDependencies"-property and we are done.
 
-
-
+Now when you install Grunt plugins use the --save-dev option to store the plugin as a development dependency. This way you can just check your package.json in to version control and quickly install all the plugins you need with `npm install`.
 
 
 
