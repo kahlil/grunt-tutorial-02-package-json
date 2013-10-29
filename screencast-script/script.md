@@ -17,20 +17,19 @@ Well, let's first have a look at what we can find on gruntjs.com: http://gruntjs
 > projects published as npm modules. You will list grunt and the
 > Grunt plugins your project needs as devDependencies in this file.
 
-So here we have two sets of information: 1. what the package.json normally is used for and 2. what it is used for in Grunt.
+So here we have two sets of information: 1. what the package.json is normally used for and 2. what it is used for in Grunt.
 I will expand on that a little later. So further it says:
 
 
 > ## package.json
-> The package.json file belongs in the root directory of your project,
-> next to the Gruntfile, and should be committed with your project
+> The package.json file belongs in the root directory of your project, next to the Gruntfile, and should be committed with your project
 > source. Running npm install in the same folder as a package.json
 > file will install the correct version of each dependency listed
 > therein.
 
-This is part of why the package.json is important for Grunt. gruntplugins get stored as devDependencies and then can be installed via npm install. Which is especially important if you work in a team.
+This is part of why the package.json is important for Grunt. gruntplugins get stored as devDependencies and then can be installed via the command 'npm install' on the command line. Which is especially important if you work in a team.
 
-There is another reason why the package.json is useful for Grunt: Grunt can actually consume the information in the package json and use the values in it's grunt tasks. ie. it will use the version number, license information and author name to insert them in a banner for your minified files.
+There is another reason why the package.json is useful for Grunt: Grunt can actually consume the information in the package json and use the values in it's grunt tasks. For instance, Grunt can use the version number, license information and author name to insert them in a banner for your minified files.
 
 Next on the site, it goes on to list the ways how you can create a package.json for your project.
 
@@ -56,16 +55,19 @@ Now I am going to show you how to create your package.json on the command line w
 -- You don't need a description for your Grunt project so we skip that.
 -- Same goes for the entry point and the test command.
 -- On the next one we can insert the link to the Git repo of the project if we have one.
--- If you the project is a gruntplugin or a bower component or an npm module you should enter relevant keywords for the keywords property.
+-- If your project is a gruntplugin or a bower component or an npm module you should enter relevant keywords for the keywords property. It will be used in search after you published your project.
 -- Now fill in your name and which license your are using and we're done!
 
-npm shows you a nice little summary that we confirm with yes.
+npm then shows you a nice little summary that you confirm with yes.
 
 Then open up the package.json file in your favorite editor.
 As you can see there is a bunch of stuff in there we don't need. Throw out "main", "scripts" and "description" and add the "devDependencies"-property and we are done.
 
-Now when you install Grunt plugins use the --save-dev option to store the plugin as a development dependency. This way you can just check your package.json in to version control and quickly install all the plugins you need with `npm install`.
+Now when you install Grunt plugins use the --save-dev option to store the plugin as a development dependency. This way you can just commit your package.json to version control and quickly install all the plugins you need with `npm install`.
 
+-- Last slide
+
+Thanks for checking out Grunt Basics. If you have any questions let us know on Twitter or on IRC in the #gruntjs channel on #freenode.
 
 
 
