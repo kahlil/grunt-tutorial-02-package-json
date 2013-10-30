@@ -140,3 +140,5 @@ body {
   box-shadow: none; }
 .reveal .progress span {
   background: #e48632; }
+.reveal .textalign-left {
+  text-align: left; }
