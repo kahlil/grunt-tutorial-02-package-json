@@ -142,3 +142,5 @@ body {
   background: #e48632; }
 .reveal .textalign-left {
   text-align: left; }
+.reveal li {
+  list-style-type: none; }

@@ -45,27 +45,33 @@
 				</section>
 
 				<section>
-					<blockquote cite="http://gruntjs.com/getting-started#preparing-a-new-grunt-project" class="textalign-left">
-						&ldquo;<strong>package.json</strong>: This file is used by <a href="https://npmjs.org/">npm</a> to store metadata for projects published as npm modules.  You will list grunt and the Grunt plugins your project needs as <a href="https://npmjs.org/doc/json.html#devDependencies">devDependencies</a> in this file.&rdquo;
-					</blockquote>
+					<h2>Node Modules</h2>
+					<p class="fragment roll-in">Store package information</p>
+					<p class="fragment roll-in">Store dependencies &amp; devDependencies</p>
 				</section>
 
 				<section>
-					<blockquote cite="http://gruntjs.com/getting-started#package.json" class="textalign-left">
-						&ldquo;The <code>package.json</code> file belongs in the root directory of your project, next to the <code>Gruntfile</code>, and should be committed with your project source. Running <code>npm install</code> in the same folder as a <code>package.json</code> file will install the correct version of each dependency listed therein.&rdquo;
-					</blockquote>
+					<h2>Grunt</h2>
+					<p class="fragment roll-in">Make meta information available to Grunt</p>
+					<p class="fragment roll-in">Store devDependencies</p>
+				</section>
+
+				<section>
+					<h2>Do we really need it?</h2>
+					<p class="fragment roll-in">Highly recommended for teams</p>
+					<p class="fragment roll-in">Grunt plugins</p>
 				</section>
 
 				<section>
 					<h2>Generate It</h2>
 					<ul>
-						<li>
-							<a href="https://github.com/gruntjs/grunt-init">grunt-init</a><br>
+						<li class="fragment roll-in">
+							<a href="https://github.com/gruntjs/grunt-init">grunt-init</a> &amp; <a href="http://yeoman.io">Yeoman</a><br>
 							<blockquote cite="https://github.com/gruntjs/grunt-init">
 								&ldquo;Grunt-init is a scaffolding tool used to automate project creation.&rdquo;
 							</blockquote>
 						</li>
-						<li>
+						<li class="fragment roll-in">
 							<a href="https://npmjs.org/doc/init.html">npm init</a><br>
 							<blockquote cite="https://npmjs.org/doc/init.html">
 								&ldquo;This will ask you a bunch of questions, and then write a package.json for you.&rdquo;
@@ -75,7 +81,7 @@
 				</section>
 
 				<section>
-					<h2>Copy/Paste It</h2>
+					<h2>Copy &amp; Paste It</h2>
 					<pre><code data-trim contenteditable>
 {
   "name": "my-project-name",
@@ -96,8 +102,8 @@
 
 				<section>
 					<h2>Thanks &hearts;</h2>
-					<p>@gruntjs</p>
-					<p>IRC: #grunt on #freenode</p>
+					<p><a href="http://twitter.com/gruntjs"></a>@gruntjs</p>
+					<p>IRC: #grunt</p>
 				</section>
 
 			</div>
@@ -112,7 +118,7 @@
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
+				controls: false,
 				progress: true,
 				history: true,
 				center: true,
