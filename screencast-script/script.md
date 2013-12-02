@@ -24,27 +24,27 @@ So how do you create a package.json file?
 
 Since you have npm installed and scaffolding is awesome i will now show you how to use npm init to create your package.json file.
 
-Open your terminal of choice.
-Type in npm init and hit return.
-As you can see npm then gives you a nice explanation of what is going to happen.
-First it wants to know the package name.
-It has to be URL friendly in order to be valid.
-Next, npm wants to know the version number.
-Usually you would choose something like 0.0.1 or 0.1.0 to start with.
-You don't need a description for your Grunt project so we are going to skip that.
-Same goes for the entry point and the test command.
-Once you have Grunt installed you will be able to configure your tests as Grunt tasks and run them with the command grunt test.
-On the next one we can insert the link to the git repo of the project if we have one.
-If your project is a gruntplugin, or a bower component or an npm module you should enter relevant keywords for the keywords property it will be used in search after you published your project.
-Now fill in your name and which license you are using and we're done.
-npm then shows you a nice little summary that we confirm with yes.
-Then open the package.json file in your favorite editor.
-As you can see there is a bunch of stuff in there that we don't need.
-Throw out main, scripts and description and add the devDependencies property and we're done.
+Open your terminal of choice.  
+Type in npm init and hit return.  
+As you can see npm then gives you a nice explanation of what is going to happen.  
+First it wants to know the package name.  
+It has to be URL friendly in order to be valid.  
+Next, npm wants to know the version number.  
+Usually you would choose something like 0.0.1 or 0.1.0 to start with.  
+You don't need a description for your Grunt project so we are going to skip that.  
+Same goes for the entry point and the test command.  
+Once you have Grunt installed you will be able to configure your tests as Grunt tasks and run them with the command grunt test.  
+On the next one we can insert the link to the git repo of the project if we have one.  
+If your project is a gruntplugin, or a bower component or an npm module you should enter relevant keywords for the keywords property it will be used in search after you published your project.  
+Now fill in your name and which license you are using and we're done.  
+npm then shows you a nice little summary that we confirm with yes.  
+Then open the package.json file in your favorite editor.  
+As you can see there is a bunch of stuff in there that we don't need.  
+Throw out main, scripts and description and add the devDependencies property and we're done.  
 
-Now when you install gruntplugins use the save-dev option to store the plugin as a development dependency. This way you can just commit your package.json to version control and then quickly install your dependencies with npm install on the command line.
+Now when you install gruntplugins use the save-dev option to store the plugin as a development dependency.  This way you can just commit your package.json to version control and then quickly install your dependencies with npm install on the command line.  
 
-Thanks for checking out Grunt Basics. If you have any question hit us up on Twitter or in our IRC channel.
+Thanks for checking out Grunt Basics. If you have any question hit us up on Twitter or in our IRC channel.  
 
 
 
